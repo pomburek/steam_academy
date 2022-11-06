@@ -5,37 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="To jest strona o mnie">
+    <script src="https://kit.fontawesome.com/a9f8320eb0.js" crossorigin="anonymous"></script>
     <title>O mnie</title>
+
+    <script src="https://kit.fontawesome.com/a9f8320eb0.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/normalize-1.css">
     <link rel="stylesheet" href="./styles/main.css/">
 </head>
 
 <body>
 <!-- Header strony -->
-    <header>
+    <header class="hero">
         <!-- Tu będzie jutro logo-->
         <div class="container">
+            <div class="hero-top">
+            <div class="logo"><i class="fa-solid fa-paintbrush"></i></div>
             <nav>
-                <ul>
-                    <li><a href="#about">O mnie</a></li>
-                    <li><a href="#hobby">Zainteresowania</a></li>
-                    <li><a href="#photos">Zdjęcia</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                <ul class="navigation-links">
+                    <li><a class="navigation-link" href="#about">O mnie</a></li class="navigation-link">
+                    <li><a class="navigation-link" href="#hobby">Zainteresowania</a></li class="navigation-link">
+                    <li><a class="navigation-link" href="#photos">Zdjęcia</a></li class="navigation-link">
+                    <li><a class="navigation-link" href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
-
+        </div>
             <div>
-                <h1>Cześć</h1>
+                <h1> Cześć</h1>
+                
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat sed excepturi? Quis sed dolorum impedit
                     dignissimos. Iste provident nemo, deleniti, consectetur at repellendus iure distinctio similique aspernatur suscipit saepe.</p>
                 <a href="#">link</a>
             </div>
-
-            <button></button>
         </div>
     </header>
     
     <main>
-        <section class="about" id="about">
+        <section class="about section-light" id="about">
             <div class="container">
                 <div class="about-left">
                     <img src="./images/photo.webp" alt="Kwiaty w pomarańczowym słońcu ze strony Pexels">
@@ -71,7 +81,7 @@
                 </ul>
             </div>
         </section>
-        <section class="photots" id="photos">
+        <section class="photots section-light" id="photos">
             <div class="container">
                 <h2>Zdjęcia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur quas molestiae eveniet laboriosam et, quidem architecto explicabo optio consectetur numquam sunt aperiam inventore.</p>
@@ -85,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <section class="quote" id="quote">
+        <section class="quote section-unique" id="quote">
             <div class="container">
                 <blockquote>
                     <p>Nie ma wiedzy bez wyobraźni i nie ma wyobraźni bez wiedzy.</p>
@@ -93,7 +103,7 @@
                 </blockquote>
             </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact section-light" id="contact">
             <div class="container">
                 <h2>Napisz do mnie</h2>
                 <form>
@@ -102,7 +112,7 @@
                     <label for="email">Email</label>
                     <input id="email" type="email" placeholder="Wpisz swój email" required>
                     <label for="messege">Wiadomość</label>
-                    <textarea id="messege"></textarea required>
+                    <textarea id="messege" required></textarea>
                     <button type="submit">Wyślij</button>
 
                 </form>
