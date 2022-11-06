@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="To jest strona o mnie">
     <title>O mnie</title>
+    <link rel="stylesheet" href="./styles/main.css/">
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae eaque hic, mollitia dignissimos consequatur ab assumenda soluta maiores laboriosam consequuntur distinctio doloremque iste velit voluptates tempore delectus optio cumque.</p>
             </div>
         </section>
-        <section class="hobby" id="hobby">
+        <section class="hobby section-purple" id="hobby">
             <div class="container">
                 <ul>
                     <li>
@@ -86,9 +87,10 @@
         </section>
         <section class="quote" id="quote">
             <div class="container">
-                <h2 style="background-color:rgb(255, 196, 220)"></h2>
-                <p>Nie ma wiedzy bez wyobraźni i nie ma wyobraźni bez wiedzy.</p>
-                <p>Stanisław Lem</p>
+                <blockquote>
+                    <p>Nie ma wiedzy bez wyobraźni i nie ma wyobraźni bez wiedzy.</p>
+                    <p>Stanisław Lem</p>
+                </blockquote>
             </div>
         </section>
         <section class="contact" id="contact">
@@ -96,15 +98,27 @@
                 <h2>Napisz do mnie</h2>
                 <form>
                     <label for="name">Imię</label>
-                    <input id="name" type="text">
-                    <input id="email" type="email">
-                    <textarea type="text">
+                    <input id="name" type="text" placeholder="Wpisz swoje imię" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Wpisz swój email" required>
+                    <label for="messege">Wiadomość</label>
+                    <textarea id="messege"></textarea required>
+                    <button type="submit">Wyślij</button>
 
                 </form>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="section-purple">
+        <div class="container">
+            <div>
+                <p> &copy;STEAM Academu 2022</p>
+                <p>Główne zdjęcia autorstwa <strong>kogoś</strong> z <strong>Pexels</strong></p>
+                <p>Zdjęcie kwiatu <strong>tej samej osoby</strong> z <strong>Pexels</strong></p>
+            </div>
+            <div>Tu będą ikony</div>
+        </div>
+    </footer>
 
 </body>
 </html>
