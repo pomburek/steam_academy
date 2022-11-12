@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="To jest strona o mnie">
-    <script src="https://kit.fontawesome.com/a9f8320eb0.js" crossorigin="anonymous"></script>
     <title>O mnie</title>
 
     <script src="https://kit.fontawesome.com/a9f8320eb0.js" crossorigin="anonymous"></script>
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/normalize-1.css">
-    <link rel="stylesheet" href="./styles/main.css/">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
 <!-- Header strony -->
     <header class="hero">
-        <!-- Tu będzie jutro logo-->
         <div class="container">
             <div class="hero-top">
             <div class="logo"><i class="fa-solid fa-paintbrush"></i></div>
-            <nav>
+            <nav class="navigation">
                 <ul class="navigation-links">
                     <li><a class="navigation-link" href="#about">O mnie</a></li class="navigation-link">
                     <li><a class="navigation-link" href="#hobby">Zainteresowania</a></li class="navigation-link">
@@ -34,54 +32,59 @@
                 </ul>
             </nav>
         </div>
-            <div>
-                <h1> Cześć</h1>
-                
+            <div class="hero-text-wrapper hero-text">
+                <h1> Cześć!</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat sed excepturi? Quis sed dolorum impedit
-                    dignissimos. Iste provident nemo, deleniti, consectetur at repellendus iure distinctio similique aspernatur suscipit saepe.</p>
-                <a href="#">link</a>
+                dignissimos. Iste provident nemo, deleniti, consectetur at repellendus iure distinctio similique aspernatur suscipit saepe.</p>
+                <a href="#" class="hero-button">Poznajmy się</a>
             </div>
         </div>
     </header>
     
     <main>
-        <section class="about section-light" id="about">
-            <div class="container">
+        <section class="about section-light 
+        section" id="about">
+            <div class="container about-wrapper">
                 <div class="about-left">
                     <img src="./images/photo.webp" alt="Kwiaty w pomarańczowym słońcu ze strony Pexels">
                 </div>
-                <div class="about-right"></div>
+                <div class="about-right">
                     <h2>O mnie</h2>
-                    <p><strong>Jestem Zosia</strong> </p>
+                    <p class="about-text-top"><strong>Jestem Zosia</strong> </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id libero nemo minus nihil expedita magni placeat quisquam. Sequi consequuntur consectetur aperiam? Ratione ad eos excepturi reprehenderit illo dolor repellat</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid labore atque sed, facere quis <span style="color:pink"> recusandae consectetur? </span>Repudiandae in numquam perferendis quae? Quasi vero provident at et ut sapiente. Quasi, <em>similique.</em></p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, fugit? Laborum odit, eaque in eius enim earum reprehenderit illo officia exercitationem sit non natus aliquam assumenda ab praesentium iste magni.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae eaque hic, mollitia dignissimos consequatur ab assumenda soluta maiores laboriosam consequuntur distinctio doloremque iste velit voluptates tempore delectus optio cumque.</p>
-            </div>
+                    </div>
         </section>
-        <section class="hobby section-purple" id="hobby">
+        <section class="hobby section-purple section" id="hobby">
             <div class="container">
-                <ul>
+                <ul class="hobby-wrapper">
                     <li>
+                        <i class="fa-solid fa-palette"></i>
                         <h3>Odkrycia</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod similique veritatis at voluptatibus deleniti asperiores explicabo aliquam, cumque amet magni illum dicta tempora dignissimos inventore fugit enim? Eum, facere.    
                         </p>
                     </li>
                     <li>
+                        <i class="fa-solid fa-brush"></i>
                         <h3>Kosmos</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod similique veritatis at voluptatibus deleniti asperiores explicabo aliquam, cumque amet magni illum dicta tempora dignissimos inventore fugit enim? Eum, facere.</p>
                     </li>
-                    <li><h3>Astronomia</h3>
+                    <li>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h3>Astronomia</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod similique veritatis at voluptatibus deleniti asperiores explicabo aliquam, cumque amet magni illum dicta tempora dignissimos inventore fugit enim? Eum, facere.</p>
                     </li>
                     <li>
+                        <i class="fa-solid fa-droplet"></i>
                         <h3>Fizyka</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod similique veritatis at voluptatibus deleniti asperiores explicabo aliquam, cumque amet magni illum dicta tempora dignissimos inventore fugit enim? Eum, facere.</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="photots section-light" id="photos">
+        <section class="photots section-light section" id="photos">
             <div class="container">
                 <h2>Zdjęcia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur quas molestiae eveniet laboriosam et, quidem architecto explicabo optio consectetur numquam sunt aperiam inventore.</p>
@@ -95,7 +98,7 @@
                 </div>
             </div>
         </section>
-        <section class="quote section-unique" id="quote">
+        <section class="quote section-unique section" id="quote">
             <div class="container">
                 <blockquote>
                     <p>Nie ma wiedzy bez wyobraźni i nie ma wyobraźni bez wiedzy.</p>
@@ -103,7 +106,7 @@
                 </blockquote>
             </div>
         </section>
-        <section class="contact section-light" id="contact">
+        <section class="contact section-light section" id="contact">
             <div class="container">
                 <h2>Napisz do mnie</h2>
                 <form>
@@ -119,7 +122,7 @@
             </div>
         </section>
     </main>
-    <footer class="section-purple">
+    <footer class="section-purple section">
         <div class="container">
             <div>
                 <p> &copy;STEAM Academu 2022</p>
