@@ -34,9 +34,9 @@
         </div>
             <div class="hero-text-wrapper hero-text">
                 <h1> Cześć!</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat sed excepturi? Quis sed dolorum impedit
+                <p class="hero-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat sed excepturi? Quis sed dolorum impedit
                 dignissimos. Iste provident nemo, deleniti, consectetur at repellendus iure distinctio similique aspernatur suscipit saepe.</p>
-                <a href="#" class="hero-button">Poznajmy się</a>
+                <a href="#about" class="hero-button">Poznajmy się</a>
             </div>
         </div>
     </header>
@@ -84,11 +84,11 @@
                 </ul>
             </div>
         </section>
-        <section class="photots section-light section" id="photos">
+        <section class="photos section-light section" id="photos">
             <div class="container">
                 <h2>Zdjęcia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur quas molestiae eveniet laboriosam et, quidem architecto explicabo optio consectetur numquam sunt aperiam inventore.</p>
-                <div>
+                <div class="photo-wrapper">
                     <figure><img src="./images/photo.webp" alt=""><figcaption>Podpis zdjęcia</figcaption></figure>
                     <figure><img src="./images/photo.webp" alt=""><figcaption>Podpis zdjęcia</figcaption></figure>
                     <figure><img src="./images/photo.webp" alt=""><figcaption>Podpis zdjęcia</figcaption></figure>
@@ -101,9 +101,12 @@
         <section class="quote section-unique section" id="quote">
             <div class="container">
                 <blockquote>
-                    <p>Nie ma wiedzy bez wyobraźni i nie ma wyobraźni bez wiedzy.</p>
-                    <p>Stanisław Lem</p>
+                    <div class="quote-wrapper">
+                    <i class="fas fa-quote-left fa-5x fa-pull-left"></i>
+                    <p class="quote-text">Nie ma wiedzy bez wyobraźni i nie ma wyobraźni bez wiedzy.</p>
+                    <p class="quote-author">Stanisław Lem <em>Świat Według Lema</em></p>
                 </blockquote>
+            </div>
             </div>
         </section>
         <section class="contact section-light section" id="contact">
@@ -114,7 +117,7 @@
                     <input id="name" type="text" placeholder="Wpisz swoje imię" required>
                     <label for="email">Email</label>
                     <input id="email" type="email" placeholder="Wpisz swój email" required>
-                    <label for="messege">Wiadomość</label>
+                    <label for="messege">Miejsce na twoją wiadomość</label>
                     <textarea id="messege" required></textarea>
                     <button type="submit">Wyślij</button>
 
@@ -123,13 +126,34 @@
         </section>
     </main>
     <footer class="section-purple section">
-        <div class="container">
+        <div class="container footer-wrapper">
             <div>
                 <p> &copy;STEAM Academu 2022</p>
                 <p>Główne zdjęcia autorstwa <strong>kogoś</strong> z <strong>Pexels</strong></p>
                 <p>Zdjęcie kwiatu <strong>tej samej osoby</strong> z <strong>Pexels</strong></p>
             </div>
-            <div>Tu będą ikony</div>
+            <ul class="footer-social-links">
+                <li>
+                    <a href="https://www.youtube.com/channel/UChaLZOMkcPsCgKWM3NGD_dg" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-deviantart"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 

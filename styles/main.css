@@ -29,6 +29,9 @@
     font-weight: 100;
     font-size: 70px;
   }
+  h3 {
+    margin: 5px 0;
+  }
   ul {
     list-style: none;
   }
@@ -58,6 +61,10 @@
     margin-left:20px;
     color: #ffffff;
     text-decoration: none;
+    transition: border 20ms;
+  }
+  .navigation-link:hover{
+    border-bottom: solid 3px #bf0034;
   }
   .navigation-links {
     display: flex;
@@ -90,6 +97,13 @@
     padding: 8px 16px;
     text-transform: uppercase;
     font-size: 20px;
+    transition: background-color 0.5S;
+  }
+  .hero-button:hover{
+    background-color: #bf0034;
+  }
+  .hero-p {
+    margin-bottom: 20px;
   }
   /* kolory sekcji */
   .section-light {
@@ -112,8 +126,35 @@
   .about-left,.about-right {
     width: 500px;
   }
+  .about-left{
+    position: relative;
+    z-index: 0;
+  }
   .about-left img {
-    width: 100%;
+    position: absolute;
+    right: 0;
+    width: 80%;
+  }
+  .about-left::before {
+    position: absolute;
+    top: -30;
+    left: 0;
+    content: "";
+    border: solid 30px #4f247c;
+    background-color: transparent;
+    width: 80%;
+    height: 100%;
+    z-index: -2;
+  }
+  .about-left::after {
+    position: absolute;
+    top: 30;
+    left: 100;
+    content: "";
+    background-color: #bf0034;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
   }
   .about-right h2{
     color: #4f247c;
@@ -132,9 +173,133 @@
 }
 .hobby-wrapper{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     text-align: center;
 }
 .hobby-wrapper li{
     width: 25%;
+}
+.hobby-wrapper i{
+  font-size: 50px;
+  width:30px;
+  height:30px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: solid #bf0034;
+  border-radius: 50%;
+}
+.hobby-wrapper p{
+  font-size: 16px;
+}
+.photos{
+  text-align: center;
+}
+.photo-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.photo-wrapper figure{
+  width: 350px;
+  transition: .5s;
+}
+.photo-wrapper figure:hover{
+  transform: scale(.95);
+}
+.photo-wrapper img{
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.photo-wrapper figcaption{
+  font-size: 14px;
+}
+.photos h2{
+  color: #4f247c;
+  margin-bottom: 20px;
+}
+.photos p{
+  padding: 0 130px;
+  font-size: 20PX;
+  margin-bottom: 20px;
+}
+
+/* sekcja quote */
+
+.quote{
+  color: white;
+}
+.quote-text{
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.quote-author{
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.fa-quote-left{
+  color: #4f247c;
+}
+
+.contact{
+  text-align: center;
+}
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+.contact h2{
+   margin-bottom: 60px;
+}
+.contact label{
+  text-align: left;
+  margin-bottom: 5px;
+}
+.contact input, .contact textarea{
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  border: solid 3px #4f247c;
+  border-radius: 8px;
+}
+textarea{
+  resize: none;
+}
+.contact button{
+  background-color: #4f247c;
+  color: white;
+  width: 150px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+footer{
+  color: white;
+
+}
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 14px;
+}
+.footer-wrapper p:nth-child(-n+2){
+  margin-bottom: 5px;
+}
+
+.footer-social-links{
+  display: flex;
+  gap: 25px;
+}
+.footer-social-links a{
+  color: white;
+  font-size: 30px;
+  transition: 0.5s;
+}
+.footer-social-links a:hover{
+  color: #bf0034;
 }
