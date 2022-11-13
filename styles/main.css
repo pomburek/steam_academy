@@ -43,12 +43,7 @@
     width: 1100px;
     margin: 0 auto;
   }
-  @media screen and (max-width: 1100px) {
-    .container {
-      width: 100%;
-      padding: 0 40px;
-    }
-  }
+
   
   /* Stylowanie Nawigacji i logo */
   /* Stylowanie logo */
@@ -78,6 +73,9 @@
     /* width: 400px; */
     /* justify-content: space-between; */
   }
+  .mobile-menu-icon{
+    display: none;
+  }
   /* Header */
   .hero {
     padding-top: 50px;
@@ -95,7 +93,7 @@
     margin-bottom: 100px;
   }
   .hero-text-wrapper {
-    width: 500px;
+    width: 50%;
   }
   .hero-button {
     color: white;
@@ -129,8 +127,9 @@
     display: flex;
     justify-content: space-between;
   }
-  .about-left,.about-right {
-    width: 500px;
+  .about-left,
+  .about-right {
+    width: 48%;
   }
   .about-left{
     position: relative;
@@ -160,7 +159,7 @@
   content: "";
   background-color: #bf0034;
   width: 80%;
-  height: 600px;
+  height: 500px;
   z-index: -1;
   }
     
@@ -330,3 +329,86 @@ footer{
 .footer-social-links a:hover{
   color: #bf0034;
 }
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .photo-wrapper figure{
+    width: 48%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile-menu-icon{
+    display: block;
+  }
+  .navigation-links{
+    display: none;
+  }
+  .opened{
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+    font-size: 80px;
+    margin-top: 10px;
+  }
+  .photo-wrapper figure {
+    width: 90%
+  }
+  .photo-wrapper {
+    justify-content: center;
+  }
+  .photos p{
+    padding: 0;
+  }
+  .contact form{
+    width:90%;
+  }
+  .hobby-wrapper{
+    display: block;
+}
+  .hobby-wrapper li{
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .navigation-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about-left, .about-right{
+    width: 100%;
+  }
+  .about-right{
+    margin-top: 700px;
+  }
+}
+@media screen and (max-width: 480px){
+  h1{
+    font-size: 40px;
+  }
+  .hero-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .hero-text-wrapper {
+    width: 100%;
+  }
+  .hero-button {
+    font-size: 18px;
+  }
+}
+  
