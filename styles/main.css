@@ -8,7 +8,7 @@
     font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
-    background-color: antiquewhite;
+    background-color: #AFB760;
     line-height: 1.5;
     color:rgb(23, 19, 25);
   }
@@ -55,7 +55,7 @@
   } */
   .fa-paintbrush {
     font-size: 50px;
-    color: #bf0034;
+    color: #FFBD00;
   }
   .hero-top {
     display: flex;
@@ -88,7 +88,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    color: white;
+    color: antiquewhite;
   }
 
   .hero-text {
@@ -114,13 +114,13 @@
   }
   /* kolory sekcji */
   .section-light {
-    background-color: #ffffff;
+    background-color: rgb(247, 243, 237);
   }
   .section-purple {
     background-color: #4f247c;
   }
   .section-unique {
-    background-color: #bf0034;
+    background-color: ##FFBD00;
   }
   .section {
     padding: 100px 0;
@@ -160,7 +160,7 @@
   top: 30px;
   left: 60px;
   content: "";
-  background-color: #bf0034;
+  background-color: #FFBD00;
   width: 80%;
   height: 500px;
   z-index: -1;
@@ -175,7 +175,7 @@
     margin-bottom: 10px;
 }
 .about-text-top::first-letter{
-    color: #bf0034;
+    color: #FFBD00;
 }
 
 .hobby{
@@ -269,7 +269,7 @@ blockquote{
   font-size: 14px;
 }
 .fa-quote-left{
-  color: #4f247c;
+  color: #bf0034;
 }
 
 .contact{
@@ -298,7 +298,7 @@ textarea{
   resize: none;
 }
 .contact button{
-  background-color: #4f247c;
+  background-color: #FFBD00;
   color: white;
   width: 150px;
   margin: 0 auto;
@@ -325,12 +325,12 @@ footer{
   gap: 25px;
 }
 .footer-social-links a{
-  color: white;
+  color: #ffffff;
   font-size: 30px;
   transition: 0.5s;
 }
 .footer-social-links a:hover{
-  color: #bf0034;
+  color: #FFBD00;
 }
 
 @media screen and (max-width: 1100px) {
