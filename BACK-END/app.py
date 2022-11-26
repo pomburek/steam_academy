@@ -32,6 +32,6 @@ class Project(db.Model):
 
 
 @app.route("/")
-def hello_world():
+def home():
     my_projects = Project.query.all()
-    return render_template('index.html'         my_projects=my_projects)
+    return render_template('index.html' ,my_projects=my_projects)
