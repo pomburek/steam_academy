@@ -13,8 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./styles/normalize-1.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="/static/styles/normalize.css">
+    <link rel="stylesheet" href="/static/styles/main.css">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
         section" id="about">
             <div class="container about-wrapper">
                 <div class="about-left">
-                    <img src="./images/Illustration2.jpg" alt="Ludzik szybujący w fioletowej przestrzeni">
+                    <img src="/static/images/Illustration2.jpg" alt="Ludzik szybujący w fioletowej przestrzeni">
                 </div>
                 <div class="about-right">
                     <h2>O mnie</h2>
@@ -93,12 +93,12 @@
                 <h2>Art</h2>
                 <p>Moje rysunki z różnych dziedziń sztuki. To nie są najlepsze prace, ale coś, żeby nie było tu pusto :)</p>
                 <div class="photo-wrapper">
-                    <figure><img src="./images/grass.jpg" alt=""><figcaption>Trawa - digital</figcaption></figure>
-                    <figure><img src="./images/crows.jpg" alt=""><figcaption>Akwarela - kruki</figcaption></figure>
-                    <figure><img src="./images/Redface.jpg" alt=""><figcaption>Kot - digital</figcaption></figure>
-                    <figure><img src="./images/Leaf_cats_forest.jpg" alt=""><figcaption>Koty w lesie - digital</figcaption></figure>
-                    <figure><img src="./images/nymph_arttrade.gif" alt=""><figcaption>Animacja - gif</figcaption></figure>
-                    <figure><img src="./images/ryba.png" alt=""><figcaption>Sardynka w paincie</figcaption></figure>
+                    <figure><img src="/static/images/grass.jpg" alt=""><figcaption>Trawa - digital</figcaption></figure>
+                    <figure><img src="/static/images/crows.jpg" alt=""><figcaption>Akwarela - kruki</figcaption></figure>
+                    <figure><img src="/static/images/Redface.jpg" alt=""><figcaption>Kot - digital</figcaption></figure>
+                    <figure><img src="/static/images/Leaf_cats_forest.jpg" alt=""><figcaption>Koty w lesie - digital</figcaption></figure>
+                    <figure><img src="/static/images/nymph_arttrade.gif" alt=""><figcaption>Animacja - gif</figcaption></figure>
+                    <figure><img src="/static/images/ryba.png" alt=""><figcaption>Sardynka w paincie</figcaption></figure>
                 </div>
             </div>
         </section>
@@ -128,8 +128,8 @@
                 </form>
             </div>
         </section>
-        {% include 'projects.html' %}
     </main>
+    {% include 'projects.html' %}
     <footer class="section-purple section">
         <div class="container footer-wrapper">
             <div>
@@ -161,6 +161,6 @@
             </ul>
         </div>
     </footer>
-    <script src="./js/mobile_menu.js"></script>
+    <script src="/static/js/mobile_menu.js"></script>
 </body>
 </html>

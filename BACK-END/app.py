@@ -1,23 +1,14 @@
 from flask import Flask
-from flask import render_template
-
-app = Flask(__name__)
-
-@app.route("/")
-def home():
-    return render_template(
-        'index.html'
-    )
-
-from datetime import datetime
-
-from flask import Flask
-from flask import render_template
+from flask import render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
+from flask import send_from_directory
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///zosia.db'
 db = SQLAlchemy(app)
+
 
 class Project(db.Model):
    id = db.Column(db.Integer, primary_key=True)
@@ -31,7 +22,18 @@ class Project(db.Model):
        return '<Project %r>' % self.title
 
 
+with app.app_context():
+    db.create_all()
+
+
+@app.route('/static/<path:path>')
+def send_report(path):
+    print("co u diaska", path)
+    return send_from_directory('static', path)
+
+
 @app.route("/")
 def home():
     my_projects = Project.query.all()
-    return render_template('index.html' ,my_projects=my_projects)
+    return render_template('index.html', my_projects=my_projects)
+   
